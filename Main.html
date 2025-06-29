@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sweet Coffee</title>
+  <script src="burger-menu.js" defer></script>
+  <script src="user.js" defer></script>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+</head>
+
+<body>
+
+  <header class="container" role="banner">
+    <a href="../Main.html" class="logo" aria-label="Sweet Coffee logo">
+      <div class="icon" aria-hidden="true">
+        <span class="material-icons">coffee</span>
+      </div>
+      <span class="logo-text">Sweet Coffee</span>
+    </a>
+    <div class="hamburger" aria-hidden="true">
+      <span class="material-icons">menu</span>
+    </div>
+    <nav role="navigation" aria-label="Primary navigation">
+      <ul>
+        <li><a href="../Main.html">Home</a></li>
+        <li><a href="../catalog/catalog.html">Catalog</a></li>
+        <li><a href="../profile/profile.html">Profile</a></li>
+        <li><a href="../contacts/contacts.html">Contacts</a></li>
+      </ul>
+    </nav>
+    <div class="mobile-menu" aria-hidden="true">
+      <div1 class="close-menu" aria-hidden="true">
+        <span class="material-icons">close</span>
+      </div1>
+      <ul>
+        <li><a href="../Main.html">Home</a></li>
+        <li><a href="../catalog/catalog.html">Catalog</a></li>
+           <li><a href="../profile/profile.html" class="mobile-profile-link">Profile</a></li>
+        <li><a href="../contacts/contacts.html">Contacts</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main class="container" role="main" aria-label="Main content of Sweet Coffee website">
+
+    <section class="hero" aria-label="Introduction and main call to action">
+      <div class="hero-text">
+        <h1><span>Sweet </span><span class="highlight">Coffee</span></h1>
+        <p>Experience the perfect blend of artisanal coffee craftsmanship and cozy atmosphere. Every cup tells a story
+          of passion and quality.</p>
+        <div>
+          <button class="btn-yellow" type="button" aria-label="View Catalog" onclick="window.location.href='../catalog/catalog.html'">View Catalog</button>
+          <button class="btn-outline" type="button" aria-label="Learn More about Sweet Coffee">Learn More</button>
+        </div>
+      </div>
+      <div class="hero-image" aria-hidden="true">
+        <img
+          src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/da552b50-2ba0-45fb-85b2-faeb2b5d6057.png"
+          alt="Glass cup filled with rich espresso coffee with crema on top, on white background with soft shadow"
+          onerror="this.style.display='none'" />
+      </div>
+    </section>
+
+    <section class="about" aria-label="About Sweet Coffee description">
+      <h2>About Sweet Coffee</h2>
+      <p>Founded with a passion for exceptional coffee, Sweet Coffee brings together the finest beans from around the
+        world. Our minimalist approach focuses on what truly matters - the perfect cup of coffee, served in a space
+        designed for connection and contemplation.</p>
+
+      <div class="features" role="list">
+        <article class="feature" role="listitem">
+          <div class="feature-icon" aria-hidden="true"><span class="material-icons" aria-hidden="true">local_cafe</span>
+          </div>
+          <h3>Premium Beans</h3>
+          <p>Sourced directly from the finest coffee farms worldwide.</p>
+        </article>
+        <article class="feature" role="listitem">
+          <div class="feature-icon" aria-hidden="true"><span class="material-icons" aria-hidden="true">whatshot</span>
+          </div>
+          <h3>Expert Roasting</h3>
+          <p>Carefully roasted in small batches for optimal flavor.</p>
+        </article>
+        <article class="feature" role="listitem">
+          <div class="feature-icon" aria-hidden="true"><span class="material-icons" aria-hidden="true">favorite</span>
+          </div>
+          <h3>Made with Love</h3>
+          <p>Every cup crafted with passion and attention to detail.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="selection" aria-label="Our Coffee Selection">
+      <h2>Our Coffee Selection</h2>
+      <p>Discover our carefully curated collection of premium coffees</p>
+
+      <div class="products">
+        <article class="product-card" role="group" aria-labelledby="espresso-title">
+          <div class="product-image">
+            <img
+              src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/3f0e2f52-d577-40ad-8163-1e5cbdd0b63e.png"
+              alt="Closeup photo of classic espresso coffee beans, dark roasted with rich shine"
+              onerror="this.style.display='none'" />
+          </div>
+          <div class="product-info">
+            <h3 id="espresso-title" class="product-title">Classic Espresso</h3>
+            <p class="product-desc">Rich, bold flavor with notes of dark chocolate.</p>
+            <p class="product-price">$3.35</p>
+          </div>
+        </article>
+
+        <article class="product-card" role="group" aria-labelledby="cappuccino-title">
+          <div class="product-image">
+            <img
+              src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/bf7ae575-680a-4979-b2b7-5482a8f2168d.png"
+              alt="Photo of medium roasted cappuccino coffee beans on a white surface with soft light"
+              onerror="this.style.display='none'" />
+          </div>
+          <div class="product-info">
+            <h3 id="cappuccino-title" class="product-title">Cappuccino</h3>
+            <p class="product-desc">Creamy with foam perfection.</p>
+            <p class="product-price">$4.20</p>
+          </div>
+        </article>
+
+        <article class="product-card" role="group" aria-labelledby="latte-title">
+          <div class="product-image">
+            <img
+              src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/f38286c0-d09f-4a84-a535-114264ca692f.png"
+              alt="Smooth vanilla flavored coffee beans in a transparent cup with soft white background"
+              onerror="this.style.display='none'" />
+          </div>
+          <div class="product-info">
+            <h3 id="latte-title" class="product-title">Vanilla Latte</h3>
+            <p class="product-desc">Smooth vanilla flavored latte.</p>
+            <p class="product-price">$7.99</p>
+          </div>
+        </article>
+      </div>
+      <button class="btn-black" type="button" aria-label="View Full Catalog" onclick="window.location.href='../catalog/catalog.html'">View Full Catalog</button>
+    </section>
+
+    <section class="cta-section" aria-label="Call to action to explore catalog" onclick="window.location.href='../catalog/catalog.html'">
+      <h2>Ready for the Perfect Cup?</h2>
+      <p>Join thousands of coffee lovers who have discovered their new favorite blend at Sweet Coffee.</p>
+      <button class="btn-dark" type="button" aria-label="Explore Our Catalog">Explore Our Catalog</button>
+    </section>
+
+  </main>
+
+  <footer role="contentinfo">
+    <div class="footer-container">
+      <div class="footer-logo" aria-label="Sweet Coffee logo">
+        <div class="icon" aria-hidden="true"><span class="material-icons">coffee</span></div>
+        Sweet Coffee
+      </div>
+      <section class="footer-section" aria-labelledby="contact-label">
+        <h4 id="contact-label">Contact</h4>
+        <address>
+          123 Coffee Street<br />
+          New York, NY 10001<br />
+          (555) 555-1234<br />
+        </address>
+      </section>
+    </div>
+    <div style="text-align:center; padding-top:20px; color:#555; font-size:0.85rem; user-select:none;"
+      aria-label="Copyright notice">
+      © 2024 Sweet Coffee. All rights reserved.
+    </div>
+  </footer>
+
+</body>
+
+</html>

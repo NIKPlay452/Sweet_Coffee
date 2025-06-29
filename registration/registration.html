@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Registration - Sweet Coffee</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="regestration.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="registration-container">
+        <div class="logo">
+            <span class="material-icons" style="font-size: 48px; color: #ffcb05;">coffee</span>
+        </div>
+        <h1>Sweet Coffee</h1>
+        <p>Create your account</p>
+
+        <form>
+            <div class="input-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" placeholder="Enter your username" required>
+            </div>
+            <div class="input-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Enter your email" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Enter your password" required>
+            </div>
+            <div class="input-group">
+                <label for="confirm-password">Confirm Password</label>
+                <input type="password" id="confirm-password" placeholder="Confirm your password" required>
+            </div>
+
+            <button type="submit" class="create-account-btn">Create Account</button>
+        </form>
+
+        <div class="footer-text">
+            Already have an account? <a href="../login/login.html" class="sign-in">Sign in</a>
+        </div>
+        <div style="margin-top: 16px;">
+            <a href="../Main.html" class="back-to-home">&lt; Back to Home</a>
+        </div>
+    </div>
+    <div class="popup" style="display: none;">
+        <div class="message"></div>
+        <button onclick="closePopup()">Ok</button>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Login - Sweet Coffee</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="login.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="login-container">
+        <div class="logo">
+            <span class="material-icons" style="font-size: 48px; color: #ffcb05;">coffee</span>
+        </div>
+        <h1>Sweet Coffee</h1>
+        <p>Welcome back to your favorite coffee shop</p>
+
+        <form id="login-form">
+            <div class="input-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Enter your email" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Enter your password" required>
+            </div>
+
+            <button type="submit" class="login-btn">Login</button>
+        </form>
+
+        <div class="footer-text">
+            Don't have an account? <a href="../registration/registration.html">Sign up</a>
+        </div>
+        <div style="margin-top: 16px;">
+            <a href="../Main.html" class="back-to-home">&lt; Back to Home</a>
+        </div>
+    </div>
+
+    <div class="popup" style="display: none;">
+        <div class="message" id="popup-message"></div>
+        <button onclick="closePopup()">Ok</button>
+    </div>
+</body>
+
+</html>

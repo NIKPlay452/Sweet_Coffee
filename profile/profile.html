@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Profile Settings - Sweet Coffee</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="profile.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="profile-container">
+        <h1>Profile Settings</h1>
+        <p>Manage your account information</p>
+
+        <form id="profile-form">
+            <div class="input-group">
+                <label for="nickname">Nickname</label>
+                <input type="text" id="nickname" placeholder="Enter your nickname" required>
+            </div>
+            <div class="input-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" placeholder="Enter your email" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Enter your password" required>
+            </div>
+
+            <button type="submit" class="save-changes-btn">Save Changes</button>
+            <button type="button" class="cancel-btn" id="cancel-btn">Cancel</button>
+        </form>
+
+        <div class="footer-text">
+            <a href="../Main.html" class="back-to-home">&lt; Back to Home</a>
+            <div><a href="../login/login.html" class="sign-out">Sign Out</a></div>
+        </div>
+    </div>
+
+</body>
+
+</html>
